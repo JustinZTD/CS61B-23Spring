@@ -144,7 +144,7 @@ public class EvilChooserTest {
     @DisplayName("EvilChooser throws exception for max int word length")
     @Test
     @Timeout(1)
-    public void testECLargeLength() {
+    public void  testECLargeLength() {
         assertThrows(IllegalStateException.class, () -> new EvilChooser(Integer.MAX_VALUE, DICTIONARY_FILE));
     }
 

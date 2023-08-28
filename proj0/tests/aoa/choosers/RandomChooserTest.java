@@ -92,7 +92,6 @@ public class RandomChooserTest {
     @Test
     public void testReturnedOccurrences() {
         RandomChooser rc = new RandomChooser(4, "data/example-ea.txt");
-
         // Check occurrences and pattern after guessing e
         int occurencesOfE = rc.makeGuess('e');
         String firstPattern = rc.getPattern();
