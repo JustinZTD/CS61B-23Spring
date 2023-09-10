@@ -26,8 +26,6 @@ public class LinkedListDeque<T> implements Deque<T> {
 
     public static void main(String[] args) {
         Deque<Integer> lld = new LinkedListDeque<>();
-        lld.addFirst(10);
-        lld.addLast(5);
     }
 
     @Override
@@ -61,11 +59,7 @@ public class LinkedListDeque<T> implements Deque<T> {
 
     @Override
     public boolean isEmpty() {
-        if (sentinel.next != sentinel) {
-            return false;
-        } else {
-            return  true;
-        }
+        return sentinel.next == sentinel;
     }
 
     @Override
@@ -117,7 +111,7 @@ public class LinkedListDeque<T> implements Deque<T> {
         if (index == count) {
             return node.item;
         } else {
-            return getRecursiveHelper(index, count+1, node.next);
+            return getRecursiveHelper(index, count + 1, node.next);
         }
     }
 
