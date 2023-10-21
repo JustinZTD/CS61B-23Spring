@@ -1,0 +1,6 @@
+Please enter desired length of each string: 10
+Enter # strings to insert into the maps: 100000
+--Stack Overflow -- couldn't add 100000 strings of length 10.
+class BSTMap: 0.04 sec
+Java's Built-in TreeMap: 0.03 sec
+Java's Built-in HashMap: 0.02 sec
